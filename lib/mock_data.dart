@@ -1,8 +1,8 @@
 import 'package:uuid/uuid.dart';
-import 'package:todolist/model/todo.dart';
+//import 'package:todolist/model/todo.dart';
 
 class TodoData {
-  final todos = [{
+ final todos = [{
     "id": Uuid().v4(),
     "title": "Watching Netflix",
     "desc": "Don't get me wrong, I just learned startup stategy",
@@ -34,8 +34,8 @@ class TodoData {
   }
   ];
 
-  Future<List> get_data() async {
-    await Future.delayed(Duration(seconds: 3));
-    return this.todos;
-  }
+   Future<List> get_data() async {
+     await Future.delayed(Duration(seconds: 3));
+     return todos;
+   }
 }
